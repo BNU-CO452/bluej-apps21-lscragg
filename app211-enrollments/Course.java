@@ -13,7 +13,8 @@ public class Course
     private String code;
     // The full title including qualification and subject
     private String title;
-    
+    // The module on the course
+    private Module module;
     /**
      * Create a Course with a maximum number of enrolments. 
      * All other details are set to unkown values.
@@ -47,4 +48,21 @@ public class Course
         System.out.println(" --------------------------------");
         System.out.println();
     }
+    
+    /**
+     * Add module to course
+     */
+    public void addModule(Module module)
+    {
+        this.module = module;
+    }
+    
+    /**
+     * Print module detail's
+     */
+    public void printModule()
+    {
+        module.print();
+    }
+        
 }
