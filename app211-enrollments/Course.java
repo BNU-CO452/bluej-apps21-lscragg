@@ -35,6 +35,7 @@ public class Course
         printHeading();
         
         System.out.println(" Course Code: " + code + ": " + title);
+        module.print();
         System.out.println();
     }
     
@@ -55,14 +56,6 @@ public class Course
     public void addModule(Module module)
     {
         this.module = module;
-    }
-    
-    /**
-     * Print module detail's
-     */
-    public void printModule()
-    {
-        module.print();
     }
         
 }

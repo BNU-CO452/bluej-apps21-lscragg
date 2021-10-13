@@ -1,20 +1,29 @@
 Module programmingConcepts = new Module("CO452", "Programming Concepts");
 programmingConcepts.print();
-Course code: CO452: Programming Concepts
-Course credit: 0
+Module code: CO452: Programming Concepts
+Module credit: 0
 
 programmingConcepts.setCredit(15);
 programmingConcepts.print();
-Course code: CO452: Programming Concepts
-Course credit: 15
+Module code: CO452: Programming Concepts
+Module credit: 15
 
-Course artificialIntelligence = new Course("BB1ARI1", "Artificial Intelligence");
-artificialIntelligence.printModule();
+Course artficialIntelligence = new Course("BB1ARI1", "Artficial Intelligence");
+artficialIntelligence.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BB1ARI1: Artficial Intelligence
     Exception occurred.
-artificialIntelligence.printModule();
-    Exception occurred.
-artificialIntelligence.addModule(programmingConcepts);
-artificialIntelligence.printModule();
-Course code: CO452: Programming Concepts
-Course credit: 15
+artficialIntelligence.addModule(programmingConcepts);
+artficialIntelligence.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BB1ARI1: Artficial Intelligence
+Module code: CO452: Programming Concepts
+Module credit: 15
+
 

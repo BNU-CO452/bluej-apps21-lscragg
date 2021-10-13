@@ -3,7 +3,7 @@
  * Write a description of class Module here.
  *
  * @author (Lottie Scragg)
- * @version (9/10/2021)
+ * @version (13/10/2021)
  */
 public class Module
 {
@@ -28,21 +28,21 @@ public class Module
      */
     public String getCode()
     {
-        return this.code;
+        return code;
     }
     /**
      * Return title
      */
     public String getTitle()
     {
-        return this.title;
+        return title;
     }
     /**
      * Return credit
      */
     public int getCredit()
     {
-        return this.credit;
+        return credit;
     }
     /**
      * Set credit
@@ -56,8 +56,8 @@ public class Module
      */
     public void print()
     {
-        System.out.println("Course code: " + code + ": " + title);
-        System.out.println("Course credit: " + credit);
+        System.out.println("Module code: " + code + ": " + title);
+        System.out.println("Module credit: " + credit);
         System.out.println();
     }
 }
