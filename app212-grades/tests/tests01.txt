@@ -1,0 +1,30 @@
+Student lottie = new Student("Lottie Scragg", 22132481);
+Course artificialIntelligence = new Course("BB1ARI1", "Artificial Intelligence");
+lottie.enrol(artificialIntelligence);
+lottie.printCourse();
+ Student ID: 22132481, Lottie Scragg
+
+ Course BB1ARI1: Artificial Intelligence
+
+Module programmingConcepts = new Module("CO452", "Programming Concepts");
+artificialIntelligence.addModule(programmingConcepts);
+ModuleMark lottieCO452Mark = new ModuleMark(programmingConcepts);
+lottieCO452Mark.setMark(70);
+lottie.addMark(lottieCO452Mark);
+lottie.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22132481, Lottie Scragg
+
+ Course BB1ARI1: Artificial Intelligence
+
+
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+
+ No Final Course Grade Yet!
