@@ -1,0 +1,38 @@
+Student lottie = new Student();
+Course artificialIntelligence = new Course();
+lottie.enrol(artificialIntelligence);
+artificialIntelligence.print();
+
+Course BB1ARI1: BSc Artificial Intelligence
+
+ CO452: Programming Concepts	  15 credits
+ CO450: Computer Architectures	  15 credits
+ CO456: Web Development	  15 credits
+ CO407: Essentials of Intelligent Systems	  15 creditslottie.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by Lottie Scragg
+ ------------------------------------
+Student ID: 22132481, Lottie
+
+Course BB1ARI1: BSc Artificial Intelligence
+
+ CO452: Programming Concepts	  15 credits
+ CO450: Computer Architectures	  15 credits
+ CO456: Web Development	  15 credits
+ CO407: Essentials of Intelligent Systems	  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: Programming Concepts	  15	45	 D
+
+ CO450: Computer Architectures	  15	55	 C
+
+ CO456: Web Development	  15	65	 B
+
+ CO407: Essentials of Intelligent Systems	  15	75	 A
+
+
+ No Final Course Grade Yet!
