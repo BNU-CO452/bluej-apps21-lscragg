@@ -26,13 +26,44 @@ Course BB1ARI1: BSc Artificial Intelligence
  Code 	 Module 		Credit	 Mark 	 Grade
  ---- 	 -------------------- 	 ------	 ---- 	 -----
 
- CO452: Programming Concepts	  15	45	 D
+ CO452: Programming Concepts	  0	4	 F
 
- CO450: Computer Architectures	  15	55	 C
+ CO450: Computer Architectures	  15	58	 C
 
- CO456: Web Development	  15	65	 B
+ CO456: Web Development	  15	93	 A
 
- CO407: Essentials of Intelligent Systems	  15	75	 A
+ CO407: Essentials of Intelligent Systems	  0	15	 F
+
+
+ Final Course Grade = D
+Student lottie = new Student();
+Course artificialIntelligence = new Course();
+lottie.enrol(artificialIntelligence);
+lottie.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by Lottie Scragg
+ ------------------------------------
+Student ID: 22132481, Lottie
+
+Course BB1ARI1: BSc Artificial Intelligence
+
+ CO452: Programming Concepts	  15 credits
+ CO450: Computer Architectures	  15 credits
+ CO456: Web Development	  15 credits
+ CO407: Essentials of Intelligent Systems	  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: Programming Concepts	  15	200	 NS
+
+ CO450: Computer Architectures	  15	200	 NS
+
+ CO456: Web Development	  15	200	 NS
+
+ CO407: Essentials of Intelligent Systems	  15	200	 NS
 
 
  No Final Course Grade Yet!

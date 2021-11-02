@@ -61,20 +61,20 @@ public class Course
         }
     }
     
-    /** Turn mark into equivalent grade
-     * 
+    /** 
+     * Turn mark into equivalent grade
      */
     public Grades convertToGrade(int mark)
     {
         if (mark >= 0 && mark <= 39)
            return Grades.F;
-        else if (mark > 40 && mark <= 49)
+        else if (mark >= 40 && mark <= 49)
            return Grades.D;
-        else if (mark > 50 && mark <= 59)
+        else if (mark >= 50 && mark <= 59)
            return Grades.C;
-        else if (mark > 60 && mark <= 69)
+        else if (mark >= 60 && mark <= 69)
            return Grades.B;
-        else if (mark > 70 && mark <=100)
+        else if (mark >= 70 && mark <=100)
            return Grades.A;
         else 
            return Grades.NS;
@@ -92,7 +92,7 @@ public class Course
         {
             total = total + mark.getValue();
         }
-        finalMark= total / 4;
+        finalMark = total / 4;
         finalGrade = convertToGrade(finalMark);
         return finalGrade;
     }
