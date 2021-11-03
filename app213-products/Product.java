@@ -65,6 +65,8 @@ public class Product
     {
         if(quantity >= amount)
             quantity = quantity - amount;
+        else 
+            System.out.println("There is not enough of that product");
     }
     
     /**

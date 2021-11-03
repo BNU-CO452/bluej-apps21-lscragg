@@ -1,0 +1,25 @@
+Product stepsister = new Product(100, "Stepsister");
+stepsister.print();
+ ID 100: Stepsister stock level: 0
+stepsister.decreaseQuantity(2);
+There is not enough of that product
+stepsister.print();
+ ID 100: Stepsister stock level: 0
+stepsister.increaseQuantity(5);
+stepsister.print();
+ ID 100: Stepsister stock level: 5
+stepsister.decreaseQuantity(1);
+stepsister.print();
+ ID 100: Stepsister stock level: 4
+Product slated = new Product(101, "Slated");
+StockList books = new StockList();
+books.add(slated);
+books.add(stepsister);
+books.print();
+
+ Lottie's Bookshop
+ ====================
+
+ ID 101: Slated stock level: 0
+ ID 100: Stepsister stock level: 4
+
