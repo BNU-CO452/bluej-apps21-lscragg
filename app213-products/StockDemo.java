@@ -52,34 +52,57 @@ public class StockDemo
         stock.print();        
 
         sellProducts();
-        stock.print();        
+        stock.print();
+        
+        lowStockProducts();
+        stock.print();
     }
     
+    /**
+     * Buys an amount of each product
+     */
     private void buyProducts()
     {
         stock.buyProduct(101, 4);
-        stock.buyProduct(102, 15);
-        stock.buyProduct(103, 23);
-        stock.buyProduct(104, 4);
+        stock.buyProduct(102, 2);
+        stock.buyProduct(103, 8);
+        stock.buyProduct(104, 3);
         stock.buyProduct(105);
-        stock.buyProduct(106, 19);
-        stock.buyProduct(107, 9);
-        stock.buyProduct(108, 12);
-        stock.buyProduct(109, 20);
-        stock.buyProduct(1010, 40);
+        stock.buyProduct(106, 7);
+        stock.buyProduct(107, 5);
+        stock.buyProduct(108, 9);
+        stock.buyProduct(109, 6);
+        stock.buyProduct(1010, 10);
     }
 
+    /**
+     * Sells an amount of each product
+     */
     private void sellProducts()
     {
         stock.sellProduct(101, 3);
-        stock.sellProduct(102, 17);
-        stock.sellProduct(103, 19);
+        stock.sellProduct(102, 1);
+        stock.sellProduct(103, 4);
         stock.sellProduct(104);
         stock.sellProduct(105);
-        stock.sellProduct(106,15);
-        stock.sellProduct(107, 4);
-        stock.sellProduct(108, 2);
-        stock.sellProduct(109, 13);
-        stock.sellProduct(1010, 27);
-    }    
+        stock.sellProduct(106,9);
+        stock.sellProduct(107, 2);
+        stock.sellProduct(108, 6);
+        stock.sellProduct(109, 4);
+        stock.sellProduct(1010, 1);
+    } 
+    
+    private void lowStockProducts()
+    {
+        stock.lowStock(101);
+        stock.lowStock(102);
+        stock.lowStock(103);
+        stock.lowStock(104);
+        stock.lowStock(105);
+        stock.lowStock(106);
+        stock.lowStock(107);
+        stock.lowStock(108);
+        stock.lowStock(109);
+        stock.lowStock(1010);
+    }
 }

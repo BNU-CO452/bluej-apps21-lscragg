@@ -51,16 +51,25 @@ public class Product
         return quantity;
     }
 
+    /**
+     * Sets the quantity of a product
+     */
     public void setQuantity(int quantity)
     {
         this.quantity = quantity;
     }
     
+    /**
+     * Increases the quantity of a product by a user specified amount
+     */
     public void increaseQuantity(int amount)
     {
         quantity = quantity + amount;
     }
     
+    /**
+     * Decreases the quantity of a product by a user specified amount
+     */
     public void decreaseQuantity(int amount)
     {
         if(quantity >= amount)
@@ -77,7 +86,9 @@ public class Product
         return " ID " + id + ": " +  name + " stock level: " + quantity;
     }
 
-    
+    /**
+     * Prints the id, name and quantity in stock
+     */
     public void print()
     {
         System.out.println(toString());

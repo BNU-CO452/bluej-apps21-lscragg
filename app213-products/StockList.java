@@ -30,13 +30,21 @@ public class StockList
     }
     
     /**
+     * Remove a product from the stock list
+     */
+    public void remove(int productID)
+    {
+        Product product = findProduct(productID);
+        stock.remove(product);
+    }
+    
+    /**
      * A method to buy a single quantity of the product
      */
     public void buyProduct(int productID)
     {
         buyProduct(productID, 1);
     }
-    
     
     /**
      * Buy a quantity of a particular product.
@@ -185,11 +193,43 @@ public class StockList
         System.out.println();
     }
     
+    /**
+     * Prints a heading
+     */
     public void printHeading()
     {
         System.out.println();
         System.out.println(" Lottie's Bookshop");
         System.out.println(" ====================");
         System.out.println();
+    }
+    
+    /**
+     * Search for product based on name
+     */
+    public void searchName()
+    {
+      System.out.println("The following products contain the phrase The");
+      for(Product product : stock)
+      {
+        if (product.getName().contains("The"))
+        {
+            System.out.println(product.getName());
+        }
+      }
+    }
+    /**
+     * Print products whose stock levels are low
+     */
+    public void lowStock(int productID)
+    {
+        Product product = findProduct(productID);
+        
+        if (product.getQuantity() < 5)
+        {
+            System.out.println(product.getName() + " is low on stock");
+            buyProduct(productID,5);
+        }
+        
     }
 }

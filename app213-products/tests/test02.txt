@@ -1,0 +1,116 @@
+StockList books = new StockList();
+StockDemo stockDem1 = new StockDemo(books);
+stockDem1.runDemo();
+
+ Lottie's Bookshop
+ ====================
+
+ ID 101: Scythe stock level: 0
+ ID 102: Thunderhead stock level: 0
+ ID 103: The Toll stock level: 0
+ ID 104: Nowhere stock level: 0
+ ID 105: Anywhere stock level: 0
+ ID 106: Somewhere stock level: 0
+ ID 107: The Maze Runner stock level: 0
+ ID 108: The Scorch Trials stock level: 0
+ ID 109: The Death Cure stock level: 0
+ ID 1010: The Kill Order stock level: 0
+
+Bought 4 of Scythe
+Bought 2 of Thunderhead
+Bought 8 of The Toll
+Bought 3 of Nowhere
+Bought 1 of Anywhere
+Bought 7 of Somewhere
+Bought 5 of The Maze Runner
+Bought 9 of The Scorch Trials
+Bought 6 of The Death Cure
+Bought 10 of The Kill Order
+
+ Lottie's Bookshop
+ ====================
+
+ ID 101: Scythe stock level: 4
+ ID 102: Thunderhead stock level: 2
+ ID 103: The Toll stock level: 8
+ ID 104: Nowhere stock level: 3
+ ID 105: Anywhere stock level: 1
+ ID 106: Somewhere stock level: 7
+ ID 107: The Maze Runner stock level: 5
+ ID 108: The Scorch Trials stock level: 9
+ ID 109: The Death Cure stock level: 6
+ ID 1010: The Kill Order stock level: 10
+
+Sold 3 of Scythe
+Sold 1 of Thunderhead
+Sold 4 of The Toll
+sold one of Nowhere
+sold one of Anywhere
+Cannot sell 9 of Somewhere because only have 7
+Sold 2 of The Maze Runner
+Sold 6 of The Scorch Trials
+Sold 4 of The Death Cure
+Sold 1 of The Kill Order
+
+ Lottie's Bookshop
+ ====================
+
+ ID 101: Scythe stock level: 3
+ ID 102: Thunderhead stock level: 1
+ ID 103: The Toll stock level: 7
+ ID 104: Nowhere stock level: 2
+ ID 105: Anywhere stock level: 0
+ ID 106: Somewhere stock level: 7
+ ID 107: The Maze Runner stock level: 4
+ ID 108: The Scorch Trials stock level: 8
+ ID 109: The Death Cure stock level: 5
+ ID 1010: The Kill Order stock level: 9
+
+Scythe is low on stock
+Bought 5 of Scythe
+Thunderhead is low on stock
+Bought 5 of Thunderhead
+Nowhere is low on stock
+Bought 5 of Nowhere
+Anywhere is low on stock
+Bought 5 of Anywhere
+The Maze Runner is low on stock
+Bought 5 of The Maze Runner
+
+ Lottie's Bookshop
+ ====================
+
+ ID 101: Scythe stock level: 8
+ ID 102: Thunderhead stock level: 6
+ ID 103: The Toll stock level: 7
+ ID 104: Nowhere stock level: 7
+ ID 105: Anywhere stock level: 5
+ ID 106: Somewhere stock level: 7
+ ID 107: The Maze Runner stock level: 9
+ ID 108: The Scorch Trials stock level: 8
+ ID 109: The Death Cure stock level: 5
+ ID 1010: The Kill Order stock level: 9
+
+books.remove(101);
+books.print();
+
+ Lottie's Bookshop
+ ====================
+
+ ID 102: Thunderhead stock level: 6
+ ID 103: The Toll stock level: 7
+ ID 104: Nowhere stock level: 7
+ ID 105: Anywhere stock level: 5
+ ID 106: Somewhere stock level: 7
+ ID 107: The Maze Runner stock level: 9
+ ID 108: The Scorch Trials stock level: 8
+ ID 109: The Death Cure stock level: 5
+ ID 1010: The Kill Order stock level: 9
+
+books.searchName();
+The following products contain the phrase The
+The Toll
+The Maze Runner
+The Scorch Trials
+The Death Cure
+The Kill Order
