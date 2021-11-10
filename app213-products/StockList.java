@@ -224,12 +224,10 @@ public class StockList
     public void lowStock(int productID)
     {
         Product product = findProduct(productID);
-        
-        if (product.getQuantity() < 5)
-        {
+          if (product.getQuantity() < 5)
+         {
             System.out.println(product.getName() + " is low on stock");
             buyProduct(productID,5);
-        }
-        
+         }  
     }
 }
