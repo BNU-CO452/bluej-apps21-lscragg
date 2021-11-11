@@ -66,8 +66,30 @@ Sold 1 of The Kill Order
  ID 109: The Death Cure stock level: 5
  ID 1010: The Kill Order stock level: 9
 
-Scythe is low on stock
-Bought 5 of Scythe
+books.remove(101);
+books.print();
+
+ Lottie's Bookshop
+ ====================
+
+ ID 102: Thunderhead stock level: 1
+ ID 103: The Toll stock level: 7
+ ID 104: Nowhere stock level: 2
+ ID 105: Anywhere stock level: 0
+ ID 106: Somewhere stock level: 7
+ ID 107: The Maze Runner stock level: 4
+ ID 108: The Scorch Trials stock level: 8
+ ID 109: The Death Cure stock level: 5
+ ID 1010: The Kill Order stock level: 9
+
+books.searchName("The");
+The following products contain the phrase The
+The Toll
+The Maze Runner
+The Scorch Trials
+The Death Cure
+The Kill Order
+books.lowStock();
 Thunderhead is low on stock
 Bought 5 of Thunderhead
 Nowhere is low on stock
@@ -76,22 +98,6 @@ Anywhere is low on stock
 Bought 5 of Anywhere
 The Maze Runner is low on stock
 Bought 5 of The Maze Runner
-
- Lottie's Bookshop
- ====================
-
- ID 101: Scythe stock level: 8
- ID 102: Thunderhead stock level: 6
- ID 103: The Toll stock level: 7
- ID 104: Nowhere stock level: 7
- ID 105: Anywhere stock level: 5
- ID 106: Somewhere stock level: 7
- ID 107: The Maze Runner stock level: 9
- ID 108: The Scorch Trials stock level: 8
- ID 109: The Death Cure stock level: 5
- ID 1010: The Kill Order stock level: 9
-
-books.remove(101);
 books.print();
 
  Lottie's Bookshop
@@ -107,10 +113,3 @@ books.print();
  ID 109: The Death Cure stock level: 5
  ID 1010: The Kill Order stock level: 9
 
-books.searchName();
-The following products contain the phrase The
-The Toll
-The Maze Runner
-The Scorch Trials
-The Death Cure
-The Kill Order

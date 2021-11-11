@@ -53,9 +53,6 @@ public class StockDemo
 
         sellProducts();
         stock.print();
-        
-        lowStockProducts();
-        stock.print();
     }
     
     /**
@@ -91,18 +88,4 @@ public class StockDemo
         stock.sellProduct(109, 4);
         stock.sellProduct(1010, 1);
     } 
-    
-    private void lowStockProducts()
-    {
-        stock.lowStock(101);
-        stock.lowStock(102);
-        stock.lowStock(103);
-        stock.lowStock(104);
-        stock.lowStock(105);
-        stock.lowStock(106);
-        stock.lowStock(107);
-        stock.lowStock(108);
-        stock.lowStock(109);
-        stock.lowStock(1010);
-    }
 }

@@ -11,7 +11,8 @@ public class StockList
 {
     // A list of the products.
     private ArrayList<Product> stock;
-
+    
+    private String phrase;
     /**
      * Initialise the stock manager.
      */
@@ -207,12 +208,12 @@ public class StockList
     /**
      * Search for product based on name
      */
-    public void searchName()
+    public void searchName(String phrase)
     {
-      System.out.println("The following products contain the phrase The");
+      System.out.println("The following products contain the phrase " + phrase);
       for(Product product : stock)
       {
-        if (product.getName().contains("The"))
+        if (product.getName().contains(phrase))
         {
             System.out.println(product.getName());
         }
@@ -221,13 +222,14 @@ public class StockList
     /**
      * Print products whose stock levels are low
      */
-    public void lowStock(int productID)
-    {
-        Product product = findProduct(productID);
+    public void lowStock()
+    {   for(Product product : stock)
+        {
           if (product.getQuantity() < 5)
-         {
+          {
             System.out.println(product.getName() + " is low on stock");
-            buyProduct(productID,5);
-         }  
+            buyProduct(product.getID(),5);
+          }  
+        } 
     }
 }
