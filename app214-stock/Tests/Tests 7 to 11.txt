@@ -1,0 +1,199 @@
+      by Lottie Scragg
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy:        Buy an amount of a product
+    Sell:       Sell an amount of a product
+    Search:     Search for products by phrase
+    Low Stock:  Prints all products low on stock
+    Re-Stock:   Re-stocks all products low on stock
+    Quit:       Quit the program
+
+Please enter your choice > print
+
+ Lottie's Bookshop
+ ====================
+
+ ID 101: Scythe stock level: 4
+ ID 102: Thunderhead stock level: 0
+ ID 103: The Toll stock level: 0
+ ID 104: Nowhere stock level: 0
+ ID 105: Anywhere stock level: 0
+ ID 106: Somewhere stock level: 0
+ ID 107: The Maze Runner stock level: 0
+ ID 108: The Scorch Trials stock level: 0
+ ID 109: The Death Cure stock level: 0
+ ID 110: The Kill Order stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Lottie Scragg
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy:        Buy an amount of a product
+    Sell:       Sell an amount of a product
+    Search:     Search for products by phrase
+    Low Stock:  Prints all products low on stock
+    Re-Stock:   Re-stocks all products low on stock
+    Quit:       Quit the program
+
+Please enter your choice > sell
+Please enter the ID for the product 
+101
+Please enter the amount you want to sell 
+4
+Sold 4 of Scythe
+4 of ID 101 : Scythe has been sold
+********************************
+  App21-04: Stock Application 
+      by Lottie Scragg
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy:        Buy an amount of a product
+    Sell:       Sell an amount of a product
+    Search:     Search for products by phrase
+    Low Stock:  Prints all products low on stock
+    Re-Stock:   Re-stocks all products low on stock
+    Quit:       Quit the program
+
+Please enter your choice > print
+
+ Lottie's Bookshop
+ ====================
+
+ ID 101: Scythe stock level: 0
+ ID 102: Thunderhead stock level: 0
+ ID 103: The Toll stock level: 0
+ ID 104: Nowhere stock level: 0
+ ID 105: Anywhere stock level: 0
+ ID 106: Somewhere stock level: 0
+ ID 107: The Maze Runner stock level: 0
+ ID 108: The Scorch Trials stock level: 0
+ ID 109: The Death Cure stock level: 0
+ ID 110: The Kill Order stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Lottie Scragg
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy:        Buy an amount of a product
+    Sell:       Sell an amount of a product
+    Search:     Search for products by phrase
+    Low Stock:  Prints all products low on stock
+    Re-Stock:   Re-stocks all products low on stock
+    Quit:       Quit the program
+
+Please enter your choice > search
+Please enter the phrase you are looking for The
+The following products contain the phrase The
+The Toll
+The Maze Runner
+The Scorch Trials
+The Death Cure
+The Kill Order
+********************************
+  App21-04: Stock Application 
+      by Lottie Scragg
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy:        Buy an amount of a product
+    Sell:       Sell an amount of a product
+    Search:     Search for products by phrase
+    Low Stock:  Prints all products low on stock
+    Re-Stock:   Re-stocks all products low on stock
+    Quit:       Quit the program
+
+Please enter your choice > low stock
+Please enter the stock level you want to check 
+1
+Scythe is low on stock
+Thunderhead is low on stock
+The Toll is low on stock
+Nowhere is low on stock
+Anywhere is low on stock
+Somewhere is low on stock
+The Maze Runner is low on stock
+The Scorch Trials is low on stock
+The Death Cure is low on stock
+The Kill Order is low on stock
+********************************
+  App21-04: Stock Application 
+      by Lottie Scragg
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy:        Buy an amount of a product
+    Sell:       Sell an amount of a product
+    Search:     Search for products by phrase
+    Low Stock:  Prints all products low on stock
+    Re-Stock:   Re-stocks all products low on stock
+    Quit:       Quit the program
+
+Please enter your choice > re-stock
+Please enter the stock level to re-stock to 
+1
+Products have been re-stocked
+********************************
+  App21-04: Stock Application 
+      by Lottie Scragg
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy:        Buy an amount of a product
+    Sell:       Sell an amount of a product
+    Search:     Search for products by phrase
+    Low Stock:  Prints all products low on stock
+    Re-Stock:   Re-stocks all products low on stock
+    Quit:       Quit the program
+
+Please enter your choice > print
+
+ Lottie's Bookshop
+ ====================
+
+ ID 101: Scythe stock level: 1
+ ID 102: Thunderhead stock level: 1
+ ID 103: The Toll stock level: 1
+ ID 104: Nowhere stock level: 1
+ ID 105: Anywhere stock level: 1
+ ID 106: Somewhere stock level: 1
+ ID 107: The Maze Runner stock level: 1
+ ID 108: The Scorch Trials stock level: 1
+ ID 109: The Death Cure stock level: 1
+ ID 110: The Kill Order stock level: 1
+
+********************************
+  App21-04: Stock Application 
+      by Lottie Scragg
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy:        Buy an amount of a product
+    Sell:       Sell an amount of a product
+    Search:     Search for products by phrase
+    Low Stock:  Prints all products low on stock
+    Re-Stock:   Re-stocks all products low on stock
+    Quit:       Quit the program
+
+Please enter your choice > quit

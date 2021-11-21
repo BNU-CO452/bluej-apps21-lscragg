@@ -1,0 +1,48 @@
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+      by Lottie Scragg
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy:        Buy an amount of a product
+    Sell:       Sell an amount of a product
+    Search:     Search for products by phrase
+    Low Stock:  Prints all products low on stock
+    Re-Stock:   Re-stocks all products low on stock
+    Quit:       Quit the program
+
+Please enter your choice > print
+
+ Lottie's Bookshop
+ ====================
+
+ ID 101: Scythe stock level: 0
+ ID 102: Thunderhead stock level: 0
+ ID 103: The Toll stock level: 0
+ ID 104: Nowhere stock level: 0
+ ID 105: Anywhere stock level: 0
+ ID 106: Somewhere stock level: 0
+ ID 107: The Maze Runner stock level: 0
+ ID 108: The Scorch Trials stock level: 0
+ ID 109: The Death Cure stock level: 0
+ ID 110: The Kill Order stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Lottie Scragg
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Buy:        Buy an amount of a product
+    Sell:       Sell an amount of a product
+    Search:     Search for products by phrase
+    Low Stock:  Prints all products low on stock
+    Re-Stock:   Re-stocks all products low on stock
+    Quit:       Quit the program
+
+Please enter your choice > quit

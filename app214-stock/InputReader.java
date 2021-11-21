@@ -29,6 +29,8 @@ public class InputReader
      */
     public String getString(String prompt)
     {
+        reader = new Scanner(System.in);
+        
         String inputLine = null;
         boolean isValid = false;
         
@@ -47,13 +49,15 @@ public class InputReader
     }
     
     /**
-     * Read a the next int from standard imput (the text terminal),
+     * Read a the next int from standard input (the text terminal),
      * and return it as an interger.
      * 
      * @return Integer typed by user.
      */
     public int getInt(String prompt)
     {
+        reader = new Scanner(System.in);
+        
         int number = 0;
         boolean isValid = false;
         
