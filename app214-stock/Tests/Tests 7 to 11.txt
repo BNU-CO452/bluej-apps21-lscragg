@@ -1,3 +1,19 @@
+    Print:      Print all products
+    Buy:        Buy an amount of a product
+    Sell:       Sell an amount of a product
+    Search:     Search for products by phrase
+    Low Stock:  Prints all products low on stock
+    Re-Stock:   Re-stocks all products low on stock
+    Quit:       Quit the program
+
+Please enter your choice > buy
+Please enter the ID for the product 
+101
+Please enter the amount you want to buy 
+4
+4 of ID 101 : Scythe has been bought
+********************************
+  App21-04: Stock Application 
       by Lottie Scragg
 ********************************
 
@@ -150,22 +166,6 @@ Please enter your choice > re-stock
 Please enter the stock level to re-stock to 
 1
 Products have been re-stocked
-********************************
-  App21-04: Stock Application 
-      by Lottie Scragg
-********************************
-
-    Add:        Add a new product
-    Remove:     Remove an old product
-    Print:      Print all products
-    Buy:        Buy an amount of a product
-    Sell:       Sell an amount of a product
-    Search:     Search for products by phrase
-    Low Stock:  Prints all products low on stock
-    Re-Stock:   Re-stocks all products low on stock
-    Quit:       Quit the program
-
-Please enter your choice > print
 
  Lottie's Bookshop
  ====================

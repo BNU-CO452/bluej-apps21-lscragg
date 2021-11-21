@@ -107,6 +107,7 @@ public class StockApp
             int quantity = reader.getInt("Please enter the stock level to re-stock to ");
             stock.restock(quantity);
             System.out.println("Products have been re-stocked");
+            stock.print();
         }
         
         else if(choice.equals("re stock"))
@@ -114,6 +115,7 @@ public class StockApp
             int quantity = reader.getInt("Please enter the stock level to re-stock to ");
             stock.restock(quantity);
             System.out.println("Products have been re-stocked");
+            stock.print();
         }
         
         return false;
