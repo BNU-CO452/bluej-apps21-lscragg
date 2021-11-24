@@ -51,8 +51,7 @@ public class StockApp
         }
         
         else if (choice.equals("add"))
-        {
-            int id = reader.getInt("Please enter the ID for the product ");
+        {   int id = reader.getInt("Please enter the ID for the product ");
             String name = reader.getString ("Please enter the name for the product ");
             Product product = new Product(id, name);
             stock.add(product);
@@ -65,8 +64,7 @@ public class StockApp
         }
         
         else if(choice.equals("remove"))
-        {
-            int id = reader.getInt("Please enter the ID for the product ");
+        {   int id = reader.getInt("Please enter the ID for the product ");
             Product product = stock.findProduct(id);
             stock.remove(id);
             System.out.println("ID " + product.getID() +  " : " + product.getName() + " has been removed");
