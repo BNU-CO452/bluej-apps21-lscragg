@@ -4,21 +4,23 @@
  * linking all the Locations in the game to
  * form a 2D or 3D network
  *
- *  [Pub]<---->[Outside]<---->[Theatre]
+ *              [Hill]<---->[Heathland]
  *                 |
- *          [Computer Lab]<---->[Office]
+ *            [Dark forest]
+ *                 |
+ *  [Pond]<---->[Field]<---->[Ogre's House]
+ *    |            |
+ * [Cropland]    [Cave]
  *             
  * @author Derek Peacock and Nicholas Day
  * @version 2021-08-22
  */
 public class Map
 {
-    // Need to add a list of exits
-    
-    private Location outside, theater, pub, lab, office;
+    private Location cave, field, pond, cropland, ogre_house, dark_forest, hill, heathland;
 
     private Location currentLocation;
-
+    
     /**
      * Constructor for objects of class Map
      */
@@ -29,75 +31,107 @@ public class Map
 
     /**
      * Create all the Locations and link their exits together.
-     * Set the current location to the outside.
+     * Set the current location to the cave.
      * Both locations need to have been created before
-     * their exists are linked.
+     * their exits are linked.
      */
     private void createLocations()
     {
-        createOutside();
-        createTheatre();
-        createPub();
-        createOffice();
-        createLab();
+        createCave();
+        createField();
+        createPond();
+        createCropland();
+        createOgre_house();
+        createDark_forest();
+        createHill();
+        createHeathland();
 
-        currentLocation = outside;  // start game outside
+        currentLocation = cave;  // start game in the cave
     }
     
     /**
-     * Create the outside and link it to the
-     * theatre, lab and pub
+     * Create the cave and link it to the field
      */
-    private void createOutside()
+    private void createCave()
     {
-        outside = new Location("outside the main entrance of the university");
-        
+        cave = new Location("inside your cave ");
     }
     
     /**
-     * Create the pub and link it to the outside
+     * Create the field and link it to the cave
      */
-    private void createPub()
+    private void createField()
     {
-        pub = new Location("in the campus pub");
+        field = new Location("in a field");
         
-        pub.setExit("east", outside);
-        outside.setExit("west", pub);
+        field.setExit("south", cave);
+        cave.setExit("north", field);
     }
     
     /**
-     * Create the theatre linked to the outside
+     * Create the pond  and link it to the field
      */
-    private void createTheatre()
+    private void createPond()
     {
-        theater = new Location("in a lecture theater");
+        pond = new Location("next to a pond");
         
-        theater.setExit("west", outside);
-        outside.setExit("east", theater);
+        pond.setExit("east", field);
+        field.setExit("west", pond);
     }
     
     /**
-     * Create the office linked to the lab
+     * Create the cropland  and link it to the pond
      */
-    private void createOffice()
+    private void createCropland()
     {
-        office = new Location("in the computing admin office");
+        cropland = new Location("in a cropland");
         
+        cropland.setExit("north", pond);
+        pond.setExit("south", cropland);
     }
     
     /**
-     * Create the lab and link it to the outside and office
+     * Create the Ogre's house and link it to the field
      */
-    private void createLab()
+    private void createOgre_house()
     {
-        // create the Locations
-        lab = new Location("in a computing lab");
+        ogre_house = new Location("in an Ogre's house");
         
-        lab.setExit("east", office);
-        office.setExit("west", lab);
+        ogre_house.setExit("west", field);
+        field.setExit("east", ogre_house);
+    }
+    
+    /**
+     * Create the dark forest and link it to the field
+     */
+    private void createDark_forest()
+    {
+        dark_forest = new Location("in a dark forest");
         
-        lab.setExit("north", outside);
-        outside.setExit("south", lab);
+        dark_forest.setExit("south", field);
+        field.setExit("north", dark_forest);
+    }
+    
+    /**
+     * Create hill and link it to dark forest
+     */
+    private void createHill()
+    {
+        hill= new Location("on a hill");
+        
+        hill.setExit("south", dark_forest);
+        dark_forest.setExit("north", hill);
+    }
+    
+    /**
+     * Create heathland and link it to hill
+     */
+    private void createHeathland()
+    {
+        heathland = new Location("in a heathland");
+        
+        heathland.setExit("west", hill);
+        hill.setExit("east", heathland);
     }
     
     public Location getCurrentLocation()

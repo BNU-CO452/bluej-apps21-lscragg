@@ -1,7 +1,6 @@
 import java.util.Set;
 import java.util.HashMap;
 import java.util.Iterator;
-
 /**
  * Class Location - a location on the map of an adventure game.
  *
@@ -21,7 +20,6 @@ public class Location
 {
     private String description;
     private HashMap<String, Location> exits;        // stores exits of this room.
-
     /**
      * Create a location described "description". Initially, it has
      * no exits. "description" is something like "a kitchen" or
