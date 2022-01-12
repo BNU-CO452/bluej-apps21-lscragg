@@ -1,0 +1,73 @@
+
+ Welcome to Hecate's Potion!
+ You have to complete your potion. Looking at the recipe is a good way to start.
+ Type 'help' if you need help.
+
+ Your command words are:
+
+ go	  : Exit location in <direction>
+ take	  : Take <item> from location
+ stir	  : Stir <cauldron> or stir <item> into the cauldron
+ look	  : Look at recipe, location and inventory
+ help	  : List all available commands
+ quit	  : End the game
+
+ e.g. go west, read recipe 
+
+ You are inside your cave .
+ Exits: north
+The items in this location are: 
+cauldron
+recipe
+codebook
+watch
+You have currently added 0 items to your potion
+ > take watch
+watch has been added to inventory
+You have currently added 0 items to your potion
+ > look watch
+The time is 07 : 10
+The potion has not been stirred yet
+You have currently added 0 items to your potion
+ > go north
+ You are in a field.
+ Exits: east south north west
+You have currently added 0 items to your potion
+ > look watch
+The time is 07 : 20
+The potion has not been stirred yet
+You have currently added 0 items to your potion
+ > go south
+ You are inside your cave .
+ Exits: north
+The items in this location are: 
+cauldron
+recipe
+codebook
+You have currently added 0 items to your potion
+ > look watch
+The time is 07 : 30
+The potion has not been stirred yet
+You have currently added 0 items to your potion
+ > go south
+There is no exit in this direction!
+You have currently added 0 items to your potion
+ > look watch
+The time is 07 : 35
+The potion has not been stirred yet
+You have currently added 0 items to your potion
+ > go field
+There is no exit in this direction!
+You have currently added 0 items to your potion
+ > look watch
+The time is 07 : 40
+The potion has not been stirred yet
+You have currently added 0 items to your potion
+ > go
+Go where?
+You have currently added 0 items to your potion
+ > look watch
+The time is 07 : 45
+The potion has not been stirred yet
+You have currently added 0 items to your potion
+ > 
