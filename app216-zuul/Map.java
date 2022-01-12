@@ -4,7 +4,7 @@
  * linking all the Locations in the game to
  * form a 2D or 3D network
  *
- *              [Hill]<---->[Heathland]
+ *              [Meadow]<---->[Heathland]
  *                 |
  *            [Dark forest]
  *                 |
@@ -12,15 +12,16 @@
  *    |            |
  * [Cropland]    [Cave]
  *             
- * @author Derek Peacock and Nicholas Day
- * @version 2021-08-22
+ * @author Lottie Scragg
+ * @version 15/12/2021
  */
 public class Map
 {
-    private Location cave, field, pond, cropland, ogre_house, dark_forest, hill, heathland;
+    private Location cave, field, pond, cropland, ogre_house, dark_forest, meadow, heathland;
 
     private Location currentLocation;
     
+    public Item cauldron, recipe, codebook, watch, snakeroot, buttercup, holly, hound_tongue, adder_tongue, mustard_seeds;  
     /**
      * Constructor for objects of class Map
      */
@@ -32,8 +33,7 @@ public class Map
     /**
      * Create all the Locations and link their exits together.
      * Set the current location to the cave.
-     * Both locations need to have been created before
-     * their exits are linked.
+     * Creates items and adds them to location
      */
     private void createLocations()
     {
@@ -43,7 +43,7 @@ public class Map
         createCropland();
         createOgre_house();
         createDark_forest();
-        createHill();
+        createMeadow();
         createHeathland();
 
         currentLocation = cave;  // start game in the cave
@@ -54,7 +54,19 @@ public class Map
      */
     private void createCave()
     {
-        cave = new Location("inside your cave ");
+        cave = new Location("inside your cave ", "cave");
+        
+        cauldron = new Item("cauldron", "use this to make your potion");
+        cave.addItem(cauldron);
+        
+        recipe = new Item("recipe", "look at this to know how to make your potion");
+        cave.addItem(recipe);
+        
+        codebook = new Item("codebook", "look at this to help decipher the items");
+        cave.addItem(codebook);
+        
+        watch = new Item("watch", "look at this to read the time");
+        cave.addItem(watch);
     }
     
     /**
@@ -62,7 +74,10 @@ public class Map
      */
     private void createField()
     {
-        field = new Location("in a field");
+        field = new Location("in a field", "field");
+        
+        snakeroot = new Item("snakeroot", "an item for your potion");
+        field.addItem(snakeroot);
         
         field.setExit("south", cave);
         cave.setExit("north", field);
@@ -73,7 +88,7 @@ public class Map
      */
     private void createPond()
     {
-        pond = new Location("next to a pond");
+        pond = new Location("next to a pond", "pond");
         
         pond.setExit("east", field);
         field.setExit("west", pond);
@@ -84,7 +99,10 @@ public class Map
      */
     private void createCropland()
     {
-        cropland = new Location("in a cropland");
+        cropland = new Location("in a cropland", "cropland");
+        
+        hound_tongue = new Item("hound's tongue", "an item for your potion");
+        cropland.addItem(hound_tongue);
         
         cropland.setExit("north", pond);
         pond.setExit("south", cropland);
@@ -95,7 +113,10 @@ public class Map
      */
     private void createOgre_house()
     {
-        ogre_house = new Location("in an Ogre's house");
+        ogre_house = new Location("in an Ogre's house", "house");
+        
+        mustard_seeds = new Item("mustard seeds", "an item for your potion");
+        ogre_house.addItem(mustard_seeds);
         
         ogre_house.setExit("west", field);
         field.setExit("east", ogre_house);
@@ -106,32 +127,41 @@ public class Map
      */
     private void createDark_forest()
     {
-        dark_forest = new Location("in a dark forest");
+        dark_forest = new Location("in a dark forest", "forest");
+        
+        holly = new Item("holly", "an item for your potion");
+        dark_forest.addItem(holly);
         
         dark_forest.setExit("south", field);
         field.setExit("north", dark_forest);
     }
     
     /**
-     * Create hill and link it to dark forest
+     * Create meadow and link it to dark forest
      */
-    private void createHill()
+    private void createMeadow()
     {
-        hill= new Location("on a hill");
+        meadow = new Location("in a meadow", "meadow");
         
-        hill.setExit("south", dark_forest);
-        dark_forest.setExit("north", hill);
+        buttercup = new Item("buttercup", "an item for your potion");
+        meadow.addItem(buttercup);
+        
+        meadow.setExit("south", dark_forest);
+        dark_forest.setExit("north", meadow);
     }
     
     /**
-     * Create heathland and link it to hill
+     * Create heathland and link it to meadow
      */
     private void createHeathland()
     {
-        heathland = new Location("in a heathland");
+        heathland = new Location("in a heathland", "heathland");
         
-        heathland.setExit("west", hill);
-        hill.setExit("east", heathland);
+        adder_tongue = new Item("adder's tongue", "an item for your potion");
+        heathland.addItem(adder_tongue);
+        
+        heathland.setExit("west", meadow);
+        meadow.setExit("east", heathland);
     }
     
     public Location getCurrentLocation()

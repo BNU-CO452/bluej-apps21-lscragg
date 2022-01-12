@@ -1,6 +1,8 @@
 import java.util.Set;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.ArrayList;
+
 /**
  * Class Location - a location on the map of an adventure game.
  *
@@ -19,18 +21,55 @@ import java.util.Iterator;
 public class Location 
 {
     private String description;
-    private HashMap<String, Location> exits;        // stores exits of this room.
+    private HashMap<String, Location> exits; // stores exits of this room.
+    private ArrayList<Item> items;
+    private String name;
     /**
      * Create a location described "description". Initially, it has
      * no exits. "description" is something like "a kitchen" or
      * "an open court yard".
      */
-    public Location(String description) 
+    public Location(String description, String name) 
     {
         this.description = description;
+        this.name = name;
         exits = new HashMap<>();
+        items = new ArrayList<>();
     }
-
+    
+    /**
+     * Get string name
+     */
+    public String getName()
+    {
+        return name;
+    }
+    /**
+     * Adds items to arraylist for each location
+     */
+    public void addItem(Item item)
+    {
+        items.add(item);
+    }
+    
+    /**
+     * Removes item from location
+     */
+    public void removeItem (Item item)
+    {
+        items.remove(item);
+    }
+    /**
+     * Prints all items in the location
+     */
+    public void printItems()
+    {
+        System.out.println("The items in this location are: ");
+        for (Item item : items)
+        {
+            System.out.println(item.getName());
+        }
+    }
     /**
      * Define an exit from this room.
      * @param direction The direction of the exit.

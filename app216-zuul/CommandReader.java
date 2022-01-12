@@ -58,6 +58,7 @@ public class CommandReader
         }
 
         return executeCommand();
+        
     }
 
     private boolean executeCommand()
@@ -76,6 +77,18 @@ public class CommandReader
         {
             HelpCommand help = new HelpCommand(game);
             help.execute();
+        }
+        
+        else if(commandWord.equals(CommandWords.STIR.word))
+        {
+            StirCommand stir = new StirCommand(game, word2);
+            stir.execute();
+        }
+        
+        else if(commandWord.equals(CommandWords.LOOK.word))
+        {
+            LookCommand look = new LookCommand(game,word2);
+            look.execute();
         }
         else if(commandWord.equals(CommandWords.QUIT.word))
         {
