@@ -1,0 +1,199 @@
+You have currently added 0 items to your potion
+ > go south
+ You are inside your cave .
+ Exits: north
+The items in this location are: 
+cauldron
+recipe
+codebook
+You have currently added 0 items to your potion
+ > look watch
+The time is 09 : 55
+The potion was stirred at 09 : 15
+You have currently added 0 items to your potion
+ > stir snakeroot
+snakeroot has been added to the cauldron
+You have currently added 1 item to your potion
+ > look watch
+The time is 10 : 00
+The potion was stirred at 09 : 55
+You have currently added 1 item to your potion
+ > go north
+ You are in a field.
+ Exits: east south north west
+You have currently added 1 item to your potion
+ > go north
+ You are in a dark forest.
+ Exits: south north
+You have currently added 1 item to your potion
+ > take holly
+holly has been added to inventory
+You have currently added 1 item to your potion
+ > go south
+ You are in a field.
+ Exits: east south north west
+You have currently added 1 item to your potion
+ > go south
+ You are inside your cave .
+ Exits: north
+The items in this location are: 
+cauldron
+recipe
+codebook
+You have currently added 1 item to your potion
+ > look watch
+The time is 10 : 30
+The potion was stirred at 09 : 55
+You have currently added 1 item to your potion
+ > stir holly
+You added the wrong item to your potion and it exploded.
+You cast a spell to save your potion but it takes half an hour.
+You have currently added 1 item to your potion
+ > look watch
+The time is 11 : 00
+The potion was stirred at 10 : 55
+You have currently added 1 item to your potion
+ > stir snakeroot
+snakeroot is not in your inventory
+You have currently added 1 item to your potion
+ > look snakeroot
+You cannot see snakeroot
+You have currently added 1 item to your potion
+ > look watch
+The time is 11 : 10
+The potion was stirred at 10 : 55
+You have currently added 1 item to your potion
+ > take recipe
+recipe has been added to inventory
+You have currently added 1 item to your potion
+ > go north
+ You are in a field.
+ Exits: east south north west
+You have currently added 1 item to your potion
+ > look recipe
+For this next item you will have to be reliant,
+On your friend who is green, hideous and giant.
+You let him borrow your eye of newt,
+Visit him to get it back from this massive brute.
+You have currently added 1 item to your potion
+ > look watch
+The time is 11 : 30
+The potion was stirred at 10 : 55
+You have currently added 1 item to your potion
+ > go north
+ You are in a dark forest.
+ Exits: south north
+You have currently added 1 item to your potion
+ > go north
+ You are in a meadow.
+ Exits: east south
+You have currently added 1 item to your potion
+ > look buttercup
+You can see buttercup
+You have currently added 1 item to your potion
+ > look watch
+The time is 11 : 50
+The potion was stirred at 10 : 55
+You have currently added 1 item to your potion
+ > look butttercup
+You cannot see butttercup
+You have currently added 1 item to your potion
+ > go south
+ You are in a dark forest.
+ Exits: south north
+You have currently added 1 item to your potion
+ > go north
+ You are in a meadow.
+ Exits: east south
+You have currently added 1 item to your potion
+ > look watch
+The time is 12 : 10
+The potion was stirred at 10 : 55
+You have currently added 1 item to your potion
+ > look buttercup
+You can see buttercup
+You have currently added 1 item to your potion
+ > look watch
+The time is 12 : 20
+The potion was stirred at 10 : 55
+You have currently added 1 item to your potion
+ > take buttercup
+buttercup has been added to inventory
+You have currently added 1 item to your potion
+ > look buttercup
+You have currently added 1 item to your potion
+ > look buttercup
+You have currently added 1 item to your potion
+You forgot to stir your cauldron and your cave caught fire.
+You cast a spell that saves your cave and its content but it takes half an hour.
+You have currently added 1 item to your potion
+ > go south
+ You are in a dark forest.
+ Exits: south north
+You have currently added 1 item to your potion
+ > look buttercup
+You have currently added 1 item to your potion
+ > look watch
+The time is 13 : 15
+The potion was stirred at 0 13 : 00
+You have currently added 1 item to your potion
+ > look buttercup
+You have currently added 1 item to your potion
+ > look watch
+The time is 13 : 25
+The potion was stirred at 0 13 : 00
+You have currently added 1 item to your potion
+ > go south
+ You are in a field.
+ Exits: east south north west
+You have currently added 1 item to your potion
+ > look mushroom
+You cannot see mushroom
+You have currently added 1 item to your potion
+ > look watch
+The time is 13 : 40
+The potion was stirred at 0 13 : 00
+You have currently added 1 item to your potion
+ > look field
+You cannot see field
+You have currently added 1 item to your potion
+ > look location
+ You are in a field.
+ Exits: east south north west
+You have currently added 1 item to your potion
+ > look watch
+The time is 13 : 55
+The potion was stirred at 0 13 : 00
+You have currently added 1 item to your potion
+ > look inventory
+The items in inventory are:
+watch
+mustard seeds
+holly
+recipe
+buttercup
+You have currently added 1 item to your potion
+ > look watch
+The time is 14 : 05
+The potion was stirred at 0 13 : 00
+You have currently added 1 item to your potion
+ > help
+ You are trying to make your potion. Check the recipe
+
+ Your command words are:
+
+ go	  : Exit location in <direction>
+ take	  : Take <item> from location
+ stir	  : Stir <cauldron> or stir <item> into the cauldron
+ look	  : Look at recipe, location and inventory
+ help	  : List all available commands
+ quit	  : End the game
+
+ e.g. go west, read recipe 
+
+ You are in a field.
+ Exits: east south north west
+You have currently added 1 item to your potion
+ > quit
+You were unable to complete the potion in time
+Thank you for playing.  Good bye.
