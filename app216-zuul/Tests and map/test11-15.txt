@@ -1,0 +1,131 @@
+
+ Welcome to Hecate's Potion!
+ You have to complete your potion. Looking at the recipe is a good way to start.
+ Type 'help' if you need help.
+
+ Your command words are:
+
+ go	  : Exit location in <direction>
+ take	  : Take <item> from location
+ stir	  : Stir <cauldron> or stir <item> into the cauldron
+ look	  : Look at recipe, location and inventory
+ help	  : List all available commands
+ quit	  : End the game
+
+ e.g. go west, read recipe 
+
+ You are inside your cave .
+ Exits: north
+The items in this location are: 
+cauldron
+recipe
+codebook
+watch
+You have currently added 0 items to your potion
+ > take watch
+watch has been added to inventory
+You have currently added 0 items to your potion
+ > look watch
+The time is 07 : 10
+The potion has not been stirred yet
+You have currently added 0 items to your potion
+ > stir cauldron
+Cauldron has been stirred
+You have currently added 0 items to your potion
+ > look watch
+The time is 07 : 20
+The potion was stirred at 07 : 10
+You have currently added 0 items to your potion
+ > go north
+ You are in a field.
+ Exits: east south north west
+You have currently added 0 items to your potion
+ > look watch
+The time is 07 : 30
+The potion was stirred at 07 : 10
+You have currently added 0 items to your potion
+ > stir cauldron
+You can only stir when you are in the cave
+You have currently added 0 items to your potion
+ > look watch
+The time is 07 : 35
+The potion was stirred at 07 : 10
+You have currently added 0 items to your potion
+ > take snakeroot
+snakeroot has been added to inventory
+You have currently added 0 items to your potion
+ > go south
+ You are inside your cave .
+ Exits: north
+The items in this location are: 
+cauldron
+recipe
+codebook
+You have currently added 0 items to your potion
+ > look watch
+The time is 07 : 50
+The potion was stirred at 07 : 10
+You have currently added 0 items to your potion
+ > stir snakeroot
+snakeroot has been added to the cauldron
+You have currently added 1 item to your potion
+ > look watch
+The time is 07 : 55
+The potion was stirred at 07 : 50
+You have currently added 1 item to your potion
+ > look inventory
+The items in inventory are:
+watch
+You have currently added 1 item to your potion
+ > go north
+ You are in a field.
+ Exits: east south north west
+You have currently added 1 item to your potion
+ > go north
+ You are in a dark forest.
+ Exits: south north
+You have currently added 1 item to your potion
+ > take holly
+holly has been added to inventory
+You have currently added 1 item to your potion
+ > go south
+ You are in a field.
+ Exits: east south north west
+You have currently added 1 item to your potion
+ > go south
+ You are inside your cave .
+ Exits: north
+The items in this location are: 
+cauldron
+recipe
+codebook
+You have currently added 1 item to your potion
+ > look watch
+The time is 08 : 30
+The potion was stirred at 07 : 50
+You have currently added 1 item to your potion
+ > stir holly
+You added the wrong item to your potion and it exploded.
+You cast a spell to save your potion but it takes half an hour.
+You have currently added 1 item to your potion
+ > look watch
+The time is 09 : 00
+The potion was stirred at 08 : 55
+You have currently added 1 item to your potion
+ > look inventory
+The items in inventory are:
+watch
+holly
+You have currently added 1 item to your potion
+ > look watch
+The time is 09 : 10
+The potion was stirred at 08 : 55
+You have currently added 1 item to your potion
+ > stir snakeroot
+snakeroot is not in your inventory
+You have currently added 1 item to your potion
+ > look watch
+The time is 09 : 15
+The potion was stirred at 08 : 55
+You have currently added 1 item to your potion
+ > 
