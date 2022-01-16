@@ -121,9 +121,6 @@ public class Game
         System.out.println();
         
         System.out.println(MAP.getCurrentLocation().getLongDescription());
-        if(MAP.getCurrentLocation().getName() == ("cave"))
-        {
-            MAP.getCurrentLocation().printItems();
-        }
+        MAP.getCurrentLocation().printItems();
     }
 }

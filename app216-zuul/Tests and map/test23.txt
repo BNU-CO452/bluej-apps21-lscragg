@@ -1,0 +1,199 @@
+You have currently added 2 items to your potion
+ > go north
+ You are in a field.
+ Exits: east south north west
+You have currently added 2 items to your potion
+ > go north
+ You are in a dark forest.
+ Exits: south north
+You have currently added 2 items to your potion
+ > go north
+ You are in a meadow.
+ Exits: east south
+You have currently added 2 items to your potion
+ > take buttercup
+buttercup has been added to inventory
+You have currently added 2 items to your potion
+ > l=go south
+You have currently added 2 items to your potion
+ > go south
+ You are in a dark forest.
+ Exits: south north
+You have currently added 2 items to your potion
+ > go south
+ You are in a field.
+ Exits: east south north west
+You have currently added 2 items to your potion
+ > go south
+ You are inside your cave .
+ Exits: north
+The items in this location are: 
+cauldron
+You have currently added 2 items to your potion
+ > stir buttercup
+buttercup has been added to the cauldron
+You have currently added 3 items to your potion
+ > look recipe
+You are half way there so it won't take long,
+For you to find this animal part that seems bizarre and wrong.
+Part of the only mammal that flies is what you need to search for,
+To find where it grows to the internet you must go to explore.
+You have currently added 3 items to your potion
+ > look codebook
+Adder's fork = Adder's tongue
+Blind-worm's sting = Poppies
+Eye of newt = Mustard seeds
+Fillet of a fenny snake = Snake root
+Lizard's leg = Ivy
+Scale of dragon = Tarragon
+Tongue of dog = Hound's tongue
+Toe of frog = buttercup
+Tooth of wolf = Wolf's bane
+Wool of bat = Holly
+You have currently added 3 items to your potion
+ > go north
+ You are in a field.
+ Exits: east south north west
+You have currently added 3 items to your potion
+ > go north
+ You are in a dark forest.
+ Exits: south north
+You have currently added 3 items to your potion
+ > take holly
+holly has been added to inventory
+You have currently added 3 items to your potion
+ > go south
+ You are in a field.
+ Exits: east south north west
+You have currently added 3 items to your potion
+ > go south
+ You are inside your cave .
+ Exits: north
+The items in this location are: 
+cauldron
+You have currently added 3 items to your potion
+ > stir holly
+holly has been added to the cauldron
+You have currently added 4 items to your potion
+ > look recipe
+This part on a chow chow is actually blue,
+That may be suprising to view.
+You may have worked out what the next line is going to be,
+So off you go to the internet where the habitat you will find and see.
+You have currently added 4 items to your potion
+ > look codebook
+Adder's fork = Adder's tongue
+Blind-worm's sting = Poppies
+Eye of newt = Mustard seeds
+Fillet of a fenny snake = Snake root
+Lizard's leg = Ivy
+Scale of dragon = Tarragon
+Tongue of dog = Hound's tongue
+Toe of frog = buttercup
+Tooth of wolf = Wolf's bane
+Wool of bat = Holly
+You have currently added 4 items to your potion
+ > go north
+ You are in a field.
+ Exits: east south north west
+You have currently added 4 items to your potion
+ > go north
+ You are in a dark forest.
+ Exits: south north
+You have currently added 4 items to your potion
+ > go north
+ You are in a meadow.
+ Exits: east south
+You have currently added 4 items to your potion
+ > go north
+There is no exit in this direction!
+You have currently added 4 items to your potion
+ > go east
+ You are in a heathland.
+ Exits: west
+You have currently added 4 items to your potion
+ > take hound
+hound does not exist either in this location or anywhere
+You have currently added 4 items to your potion
+ > go west
+ You are in a meadow.
+ Exits: east south
+You have currently added 4 items to your potion
+ > go south
+ You are in a dark forest.
+ Exits: south north
+You have currently added 4 items to your potion
+ > go south
+ You are in a field.
+ Exits: east south north west
+You have currently added 4 items to your potion
+ > go west
+ You are next to a pond.
+ Exits: east south
+You have currently added 4 items to your potion
+ > go south
+ You are in a cropland.
+ Exits: north
+You have currently added 4 items to your potion
+ > take hound
+hound has been added to inventory
+You have currently added 4 items to your potion
+ > go north
+ You are next to a pond.
+ Exits: east south
+You have currently added 4 items to your potion
+ > go east
+ You are in a field.
+ Exits: east south north west
+You have currently added 4 items to your potion
+ > go south
+ You are inside your cave .
+ Exits: north
+The items in this location are: 
+cauldron
+You have currently added 4 items to your potion
+ > stir hound
+hound has been added to the cauldron
+You have currently added 5 items to your potion
+ > go north
+ You are in a field.
+ Exits: east south north west
+You have currently added 5 items to your potion
+ > go north
+ You are in a dark forest.
+ Exits: south north
+You have currently added 5 items to your potion
+ > go north
+ You are in a meadow.
+ Exits: east south
+You have currently added 5 items to your potion
+ > go east
+ You are in a heathland.
+ Exits: west
+You have currently added 5 items to your potion
+ > take adder
+adder has been added to inventory
+You have currently added 5 items to your potion
+ > go west
+ You are in a meadow.
+ Exits: east south
+You have currently added 5 items to your potion
+ > go south
+ You are in a dark forest.
+ Exits: south north
+You have currently added 5 items to your potion
+ > go south
+ You are in a field.
+ Exits: east south north west
+You have currently added 5 items to your potion
+ > go south
+ You are inside your cave .
+ Exits: north
+The items in this location are: 
+cauldron
+You have currently added 5 items to your potion
+ > stir adder
+adder has been added to the cauldron
+You have finished your potion
+You finished your potion at 11 : 40
+Thank you for playing.  Good bye.

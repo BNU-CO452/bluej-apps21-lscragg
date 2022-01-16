@@ -39,6 +39,10 @@ public class LookCommand extends ZuulCommand
         else if (item.equals("location"))
         {
             System.out.println(map.getCurrentLocation().getLongDescription());
+            if(map.getCurrentLocation().getName() == ("cave"))
+            {
+                map.getCurrentLocation().printItems();
+            }
             player.decreasePotionTurns();
         }
         else if (item.equals("cauldron"))
