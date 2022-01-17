@@ -46,37 +46,43 @@ public class StirCommand extends ZuulCommand
             {
                 int checkStatus = 0;
                 Item stirItem = map.snakeroot;
-                checkStatus(checkStatus, stirItem);
+                Location returnLocation = map.field; 
+                checkStatus(checkStatus, stirItem, returnLocation);
             }
             else if (item.equals("mustard"))
             {
                 int checkStatus = 1;
                 Item stirItem = map.mustard_seeds;
-                checkStatus(checkStatus, stirItem);
+                Location returnLocation = map.ogre_house;
+                checkStatus(checkStatus, stirItem, returnLocation);
             }
             else if (item.equals("buttercup"))
             {
                 int checkStatus = 2;
                 Item stirItem = map.buttercup;
-                checkStatus(checkStatus, stirItem);
+                Location returnLocation = map.meadow;
+                checkStatus(checkStatus, stirItem, returnLocation);
             }
             else if (item.equals("holly"))
             {
                 int checkStatus = 3;
                 Item stirItem = map.holly;
-                checkStatus(checkStatus, stirItem);
+                Location returnLocation = map.dark_forest;
+                checkStatus(checkStatus, stirItem, returnLocation);
             }
             else if (item.equals("hound"))
             {
                 int checkStatus = 4;
                 Item stirItem = map.hound_tongue;
-                checkStatus(checkStatus, stirItem);
+                Location returnLocation = map.cropland;
+                checkStatus(checkStatus, stirItem, returnLocation);
             }
             else if (item.equals("adder"))
             {
                 int checkStatus = 5;
                 Item stirItem = map.adder_tongue;
-                checkStatus(checkStatus, stirItem);
+                Location returnLocation = map.heathland;
+                checkStatus(checkStatus, stirItem, returnLocation);
             }
             else if (item.equals("recipe"))
             {
@@ -155,13 +161,17 @@ public class StirCommand extends ZuulCommand
      * Checks if item is in inventory.
      * If it is, it prints out wrong item message and time penalty is added
      */
-    private void wrongItem(Item checkitem)
+    private void wrongItem(Item checkitem, Location returnLocation)
     {
         Player player = zuul.PLAYER;
         if(player.inventory.contains(checkitem))            
         {
             System.out.println("You added the wrong item to your potion and it exploded.");
             System.out.println("You cast a spell to save your potion but it takes half an hour.");
+            System.out.println("The item you stirred was removed from your inventory and added back to its location");
+            player.removeInventory(checkitem);
+            returnLocation.addItem(checkitem);
+            
             System.out.println();
             player.wrongMoveTime();
         }
@@ -176,7 +186,7 @@ public class StirCommand extends ZuulCommand
     /**
      * Checks whether the item is correct or incorrect
      */
-    private void checkStatus(int status, Item statusItem)
+    private void checkStatus(int status, Item statusItem, Location returnLocation)
     {   
         Player player = zuul.PLAYER;
         if (player.getPotionstatus() == status)
@@ -185,7 +195,7 @@ public class StirCommand extends ZuulCommand
            }
         else
            {
-               wrongItem(statusItem);
+               wrongItem(statusItem, returnLocation);
            }
     }
 }

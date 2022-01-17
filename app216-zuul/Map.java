@@ -17,7 +17,7 @@
  */
 public class Map
 {
-    private Location cave, field, pond, cropland, ogre_house, dark_forest, meadow, heathland;
+    public Location cave, field, pond, cropland, ogre_house, dark_forest, meadow, heathland;
 
     private Location currentLocation;
     
