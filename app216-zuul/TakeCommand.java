@@ -11,14 +11,16 @@
 public class TakeCommand extends ZuulCommand
 {
     String item;
+    String item2;
     /**
      * Take an item from a location and add it
      * to the player's inventory.
      */
-    public TakeCommand(Game zuul, String item)
+    public TakeCommand(Game zuul, String item, String item2)
     {
         super(zuul);
         this.item = item;
+        this.item2 = item2;
     }    
 
     public void execute()
@@ -90,21 +92,21 @@ public class TakeCommand extends ZuulCommand
             checkItem(chkitem, checkLocation);
         } 
         
-        else if(item.equals("hound"))
+        else if(item.equals("hound's") && item2.equals("tongue"))
         {
             String checkLocation = "cropland";
             Item chkitem = map.hound_tongue;
             checkItem(chkitem, checkLocation);
         } 
         
-        else if(item.equals("adder"))
+        else if(item.equals("adder's") && item2.equals("tongue"))
         {
             String checkLocation = "heathland";
             Item chkitem = map.adder_tongue;
             checkItem(chkitem, checkLocation);
         } 
         
-        else if(item.equals("mustard"))
+        else if(item.equals("mustard") && item2.equals("seeds"))
         {
             String checkLocation = "house";
             Item chkitem = map.mustard_seeds;
@@ -113,8 +115,16 @@ public class TakeCommand extends ZuulCommand
         
         else
         {
-            System.out.println(item + " does not exist either in this location or anywhere");
-            System.out.println();
+            if (item2 == null)
+            {
+                System.out.println(item + " does not exist either in this location or anywhere");
+                System.out.println();
+            }
+            else
+            {
+                System.out.println(item + " " + item2 + " does not exist either in this location or anywhere");
+                System.out.println();
+            }
         }
     }
     
@@ -131,21 +141,42 @@ public class TakeCommand extends ZuulCommand
             {
                 if (player.inventory.contains(checkItem))
                 {
-                  System.out.println(item + " is already in your inventory. Type look inventory to check");  
+                  if(item2 == null)
+                  {
+                      System.out.println(item + " is already in your inventory. Type look inventory to check");
+                  }
+                  else
+                  {
+                      System.out.println(item + " " + item2 + " is already in your inventory. Type look inventory to check");
+                  }  
                   System.out.println();
                 }
                 else
                 {
                   currentLocation.removeItem(checkItem);
                   player.addInventory(checkItem);
-                  System.out.println(item + " has been added to inventory");
+                  if (item2 == null)
+                  {
+                      System.out.println(item + " has been added to inventory");
+                  }
+                  else
+                  {
+                      System.out.println(item + " " + item2 + " has been added to inventory");
+                  }
                   System.out.println();
                   player.decreasePotionTurns();  
                 }
             }
          else
             {
-                System.out.println(item + " does not exist either in this location or anywhere");
+                if (item2 == null)
+                {
+                    System.out.println(item + " does not exist either in this location or anywhere");
+                }
+                else
+                {
+                    System.out.println(item + " " + item2 + " does not exist either in this location or anywhere");
+                }
                 System.out.println();
             }
         

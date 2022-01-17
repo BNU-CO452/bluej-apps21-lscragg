@@ -23,6 +23,7 @@ public class CommandReader
 
     private String commandWord = null;
     private String word2 = null;
+    private String word3 = null;
     /**
      * Create a parser to read from the terminal window.
      */
@@ -52,7 +53,12 @@ public class CommandReader
             if(tokenizer.hasNext()) 
             {
                 word2 = tokenizer.next();      // get second word
-                // note: we just ignore the rest of the input line.
+                
+                if (tokenizer.hasNext())
+                {
+                    word3 = tokenizer.next();
+                }
+                else word3 = null;
             }
             else word2 = null;
         }
@@ -70,7 +76,7 @@ public class CommandReader
         }
         else if(commandWord.equals(CommandWords.TAKE.word))
         {
-            TakeCommand take = new TakeCommand(game, word2);
+            TakeCommand take = new TakeCommand(game, word2, word3);
             take.execute();
         }        
         else if(commandWord.equals(CommandWords.HELP.word))
@@ -81,13 +87,13 @@ public class CommandReader
         
         else if(commandWord.equals(CommandWords.STIR.word))
         {
-            StirCommand stir = new StirCommand(game, word2);
+            StirCommand stir = new StirCommand(game, word2, word3);
             stir.execute();
         }
         
         else if(commandWord.equals(CommandWords.LOOK.word))
         {
-            LookCommand look = new LookCommand(game,word2);
+            LookCommand look = new LookCommand(game,word2, word3);
             look.execute();
         }
         else if(commandWord.equals(CommandWords.QUIT.word))

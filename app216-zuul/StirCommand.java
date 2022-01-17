@@ -9,14 +9,16 @@
 public class StirCommand extends ZuulCommand
 {
     String item;
+    String item2;
     /**
      * Take an item from player's inventory and 
      * add it to the potion
      */
-    public StirCommand(Game zuul, String item)
+    public StirCommand(Game zuul, String item, String item2)
     {
         super(zuul);
         this.item = item;
+        this.item2 = item2;
     }    
 
     public void execute()
@@ -49,7 +51,7 @@ public class StirCommand extends ZuulCommand
                 Location returnLocation = map.field; 
                 checkStatus(checkStatus, stirItem, returnLocation);
             }
-            else if (item.equals("mustard"))
+            else if (item.equals("mustard") && item2.equals("seeds"))
             {
                 int checkStatus = 1;
                 Item stirItem = map.mustard_seeds;
@@ -70,14 +72,14 @@ public class StirCommand extends ZuulCommand
                 Location returnLocation = map.dark_forest;
                 checkStatus(checkStatus, stirItem, returnLocation);
             }
-            else if (item.equals("hound"))
+            else if (item.equals("hound's") && item2.equals("tongue"))
             {
                 int checkStatus = 4;
                 Item stirItem = map.hound_tongue;
                 Location returnLocation = map.cropland;
                 checkStatus(checkStatus, stirItem, returnLocation);
             }
-            else if (item.equals("adder"))
+            else if (item.equals("adder's") && item2.equals("tongue"))
             {
                 int checkStatus = 5;
                 Item stirItem = map.adder_tongue;
@@ -125,7 +127,14 @@ public class StirCommand extends ZuulCommand
             }
             else
             {
-                System.out.println(item + " is not in your inventory");
+                if (item2 == null)
+                {
+                    System.out.println(item + " is not in your inventory");
+                }
+                else
+                {
+                    System.out.println(item + " " + item2 + " is not in your inventory");
+                }
                 System.out.println();
             }
         } 
@@ -145,14 +154,28 @@ public class StirCommand extends ZuulCommand
         Player player = zuul.PLAYER;
         if (player.inventory.contains(checkitem))
         {
-           System.out.println(item + " has been added to the cauldron");
+           if (item2 == null)
+           {
+               System.out.println(item + " has been added to the cauldron");
+           }
+           else
+           {
+               System.out.println(item + " " + item2 + " has been added to the cauldron");
+           }
            System.out.println();
            player.removeInventory(checkitem);
            player.increasePotionstatus();
         }
         else
         {
-            System.out.println(item + " is not in your inventory");
+            if (item2 == null)
+            {
+                System.out.println(item + " is not in your inventory");
+            }
+            else
+            {
+                System.out.println(item + " " + item2 + " is not in your inventory");
+            }
             System.out.println();
         }
     }
@@ -178,7 +201,14 @@ public class StirCommand extends ZuulCommand
             
         else
         {
-            System.out.println(item + " is not in your inventory");
+            if (item2 == null)
+            {
+                System.out.println(item + " is not in your inventory");
+            }
+            else
+            {
+                System.out.println(item + " " + item2 + " is not in your inventory");
+            }
             System.out.println();
         } 
     }

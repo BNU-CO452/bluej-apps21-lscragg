@@ -8,14 +8,16 @@
 public class LookCommand extends ZuulCommand
 {
     String item;
+    String item2;
     /**
      * Constructor for objects of class LookCommand
      */
-    public LookCommand(Game zuul, String item)
+    public LookCommand(Game zuul, String item, String item2)
     {
         // initialise instance variables
         super(zuul);
         this.item = item;
+        this.item2 = item2;
     }
 
     public void execute()
@@ -66,7 +68,7 @@ public class LookCommand extends ZuulCommand
         {
             checkInventory(map.snakeroot, "field");
         }
-        else if (item.equals("mustard"))
+        else if (item.equals("mustard") && item2.equals("seeds"))
         {
             checkInventory(map.mustard_seeds, "house");
         }
@@ -78,11 +80,11 @@ public class LookCommand extends ZuulCommand
         {
             checkInventory(map.holly, "forest");
         }
-        else if(item.equals("hound"))
+        else if(item.equals("hound's") && item2.equals("tongue"))
         {
             checkInventory(map.hound_tongue, "cropland");
         }
-        else if(item.equals("adder"))
+        else if(item.equals("adder's") && item2.equals("tongue"))
         {
             checkInventory(map.adder_tongue, "heathland");
         }
@@ -222,12 +224,26 @@ public class LookCommand extends ZuulCommand
         {
             if(currentLocation.getName() == location)
             {
-                System.out.println("You can see " + item);
+                if(item2 == null)
+                {
+                    System.out.println("You can see " + item);
+                }
+                else
+                {
+                    System.out.println("You can see " + item + " " + item2);
+                }
                 System.out.println();
             }
             else
             {
-                System.out.println("You cannot see " + item);
+                if(item2 == null)
+                {
+                    System.out.println("You cannot see " + item);
+                }
+                else 
+                {
+                    System.out.println("You cannot see " + item + " " + item2);
+                }
                 System.out.println();
             }
         }
