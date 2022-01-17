@@ -39,7 +39,7 @@ public class Player
      */
     public void wrongMoveTime()
     {
-        while (repeat <5)
+        while (repeat <6)
         {
             addTime();
             repeat = repeat + 1;
