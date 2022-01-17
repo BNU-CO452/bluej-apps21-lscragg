@@ -1,0 +1,199 @@
+ Welcome to Hecate's Potion!
+ You have to complete your potion. Looking at the recipe is a good way to start.
+ Type 'help' if you need help.
+
+ Your command words are:
+
+ go	  : Exit location in <direction>
+ take	  : Take <item> from location
+ stir	  : Stir <cauldron> or stir <item> into the cauldron
+ look	  : Look at recipe, location and inventory
+ help	  : List all available commands
+ quit	  : End the game
+
+ e.g. go west, read recipe 
+
+ You are inside your cave .
+ Exits: north
+The items in this location are: 
+cauldron
+recipe
+codebook
+watch
+You have currently added 0 items to your potion
+ > take recipe
+recipe has been added to inventory
+You have currently added 0 items to your potion
+ > take codebook
+codebook has been added to inventory
+You have currently added 0 items to your potion
+ > take watch
+watch has been added to inventory
+You have currently added 0 items to your potion
+ > go north
+ You are in a field.
+ Exits: east south north west
+You have currently added 0 items to your potion
+ > go east
+ You are in an Ogre's house.
+ Exits: west
+You have currently added 0 items to your potion
+ > go west
+ You are in a field.
+ Exits: east south north west
+You have currently added 0 items to your potion
+ > go west
+ You are next to a pond.
+ Exits: east south
+You have currently added 0 items to your potion
+ > go south
+ You are in a cropland.
+ Exits: north
+You have currently added 0 items to your potion
+ > go north
+ You are next to a pond.
+ Exits: east south
+You have currently added 0 items to your potion
+ > go east
+ You are in a field.
+ Exits: east south north west
+You have currently added 0 items to your potion
+ > look watch
+The time is 07 : 55
+The potion has not been stirred yet
+You have currently added 0 items to your potion
+ > go north
+ You are in a dark forest.
+ Exits: south north
+You have currently added 0 items to your potion
+ > go north
+ You are in a meadow.
+ Exits: east south
+You have currently added 0 items to your potion
+ > go east
+ You are in a heathland.
+ Exits: west
+You have currently added 0 items to your potion
+ > go west
+ You are in a meadow.
+ Exits: east south
+You have currently added 0 items to your potion
+ > go south
+ You are in a dark forest.
+ Exits: south north
+You have currently added 0 items to your potion
+ > go south
+ You are in a field.
+ Exits: east south north west
+You have currently added 0 items to your potion
+ > go east
+ You are in an Ogre's house.
+ Exits: west
+You have currently added 0 items to your potion
+ > look watch
+The time is 08 : 35
+The potion has not been stirred yet
+You have currently added 0 items to your potion
+ > look watch
+The time is 08 : 40
+The potion has not been stirred yet
+You have currently added 0 items to your potion
+You forgot to stir your cauldron and your cave caught fire.
+You cast a spell that saves your cave and its content but it takes half an hour.
+You have currently added 0 items to your potion
+ > look watch
+The time is 09 : 10
+The potion was stirred at 09 : 05
+You have currently added 0 items to your potion
+ > go north
+There is no exit in this direction!
+You have currently added 0 items to your potion
+ > take mustard
+mustard has been added to inventory
+You have currently added 0 items to your potion
+ > go west
+ You are in a field.
+ Exits: east south north west
+You have currently added 0 items to your potion
+ > go south
+ You are inside your cave .
+ Exits: north
+The items in this location are: 
+cauldron
+You have currently added 0 items to your potion
+ > stir mustard
+You added the wrong item to your potion and it exploded.
+You cast a spell to save your potion but it takes half an hour.
+You have currently added 0 items to your potion
+ > look inventory
+The items in inventory are:
+recipe
+codebook
+watch
+mustard seeds
+You have currently added 0 items to your potion
+ > stir mustard
+You added the wrong item to your potion and it exploded.
+You cast a spell to save your potion but it takes half an hour.
+You have currently added 0 items to your potion
+ > stir mustard
+You added the wrong item to your potion and it exploded.
+You cast a spell to save your potion but it takes half an hour.
+You have currently added 0 items to your potion
+ > stir mustard
+You added the wrong item to your potion and it exploded.
+You cast a spell to save your potion but it takes half an hour.
+You have currently added 0 items to your potion
+ > stir mustard
+You added the wrong item to your potion and it exploded.
+You cast a spell to save your potion but it takes half an hour.
+You have currently added 0 items to your potion
+ > stir mustard
+You added the wrong item to your potion and it exploded.
+You cast a spell to save your potion but it takes half an hour.
+You have currently added 0 items to your potion
+ > stir mustard
+You added the wrong item to your potion and it exploded.
+You cast a spell to save your potion but it takes half an hour.
+You have currently added 0 items to your potion
+ > stir mustard
+You added the wrong item to your potion and it exploded.
+You cast a spell to save your potion but it takes half an hour.
+You have currently added 0 items to your potion
+ > stir mustard
+You added the wrong item to your potion and it exploded.
+You cast a spell to save your potion but it takes half an hour.
+You have currently added 0 items to your potion
+ > stir mustard
+You added the wrong item to your potion and it exploded.
+You cast a spell to save your potion but it takes half an hour.
+You have currently added 0 items to your potion
+ > look watch
+The time is 13 : 45
+The potion was stirred at 13 : 40
+You have currently added 0 items to your potion
+ > stir mustard
+You added the wrong item to your potion and it exploded.
+You cast a spell to save your potion but it takes half an hour.
+You have currently added 0 items to your potion
+ > stir mustard
+You added the wrong item to your potion and it exploded.
+You cast a spell to save your potion but it takes half an hour.
+You have currently added 0 items to your potion
+ > stir mustard
+You added the wrong item to your potion and it exploded.
+You cast a spell to save your potion but it takes half an hour.
+You have currently added 0 items to your potion
+ > stir mustard
+You added the wrong item to your potion and it exploded.
+You cast a spell to save your potion but it takes half an hour.
+You have currently added 0 items to your potion
+ > stir mustard
+You added the wrong item to your potion and it exploded.
+You cast a spell to save your potion but it takes half an hour.
+You have currently added 0 items to your potion
+ > stir mustard
+You added the wrong item to your potion and it exploded.
+You cast a spell to save your potion but it takes half an hour.
+You were unable to complete the potion in time
+Thank you for playing.  Good bye.
