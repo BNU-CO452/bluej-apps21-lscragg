@@ -35,6 +35,7 @@ public class GoCommand extends ZuulCommand
         if (nextLocation == null) 
         {
             System.out.println("There is no exit in this direction!");
+            System.out.println();
         }
         else 
         {
@@ -45,6 +46,7 @@ public class GoCommand extends ZuulCommand
             {
                 map.getCurrentLocation().printItems();
             }
+            System.out.println();
         }
     }
 }

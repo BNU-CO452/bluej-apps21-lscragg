@@ -29,11 +29,13 @@ public class LookCommand extends ZuulCommand
         if (item == null)
         {
             System.out.println("Look at what?");
+            System.out.println();
             return;
         }
         if (item.equals("inventory"))
         {
             player.printInventory();
+            System.out.println();
             player.decreasePotionTurns();
         }
         else if (item.equals("location"))
@@ -43,6 +45,7 @@ public class LookCommand extends ZuulCommand
             {
                 map.getCurrentLocation().printItems();
             }
+            System.out.println();
             player.decreasePotionTurns();
         }
         else if (item.equals("cauldron"))
@@ -51,10 +54,12 @@ public class LookCommand extends ZuulCommand
             if (currentLocation.getName().equals("cave"))
             {
                 map.cauldron.getDescription();
+                System.out.println();
             }
             else
             {
                 System.out.println("You cannot see " + item);
+                System.out.println();
             }
         }
         else if (item.equals("snakeroot"))
@@ -92,6 +97,7 @@ public class LookCommand extends ZuulCommand
                 System.out.println("In the codebook you must peek.");
                 System.out.println("To find the fenny snake that you have yet to yield,");
                 System.out.println("Try looking for it in the field");
+                System.out.println();
               }
               else if(player.getPotionstatus() == 1)
               {
@@ -99,6 +105,7 @@ public class LookCommand extends ZuulCommand
                 System.out.println("On your friend who is green, hideous and giant.");
                 System.out.println("You let him borrow your eye of newt,");
                 System.out.println("Visit him to get it back from this massive brute.");
+                System.out.println();
               }
               else if(player.getPotionstatus() == 2)
               {
@@ -106,6 +113,7 @@ public class LookCommand extends ZuulCommand
                 System.out.println("Are two breeds of the animal that is item number three.");
                 System.out.println("The plant in question is found where it grows,");
                 System.out.println("Perhaps ask the internet to see what it knows.");
+                System.out.println();
               }
               else if(player.getPotionstatus() == 3)
               {
@@ -113,6 +121,7 @@ public class LookCommand extends ZuulCommand
                 System.out.println("For you to find this animal part that seems bizarre and wrong.");
                 System.out.println("Part of the only mammal that flies is what you need to search for,");
                 System.out.println("To find where it grows to the internet you must go to explore.");
+                System.out.println();
               }
               else if(player.getPotionstatus() == 4)
               {
@@ -120,6 +129,7 @@ public class LookCommand extends ZuulCommand
                 System.out.println("That may be suprising to view.");
                 System.out.println("You may have worked out what the next line is going to be,");
                 System.out.println("So off you go to the internet where the habitat you will find and see.");
+                System.out.println();
               }
               else 
               {
@@ -127,11 +137,13 @@ public class LookCommand extends ZuulCommand
                 System.out.println("But you shall be given this one bit of news.");
                 System.out.println("The items are all used by your sisters from the Scottish Play,");
                 System.out.println("So they shall be the ones to help you on your way.");
+                System.out.println();
               }
            }
            else
            {
                System.out.println("You cannot see " + item);
+               System.out.println();
            }
         }
         else if (item.equals("codebook"))
@@ -149,36 +161,43 @@ public class LookCommand extends ZuulCommand
                 System.out.println("Toe of frog = buttercup");
                 System.out.println("Tooth of wolf = Wolf's bane");
                 System.out.println("Wool of bat = Holly");
+                System.out.println();
             }
             else
             {
                 System.out.println("You cannot see " + item);
+                System.out.println();
             }
         }
         else if(item.equals("watch"))
         {
-            player.decreasePotionTurns();
             if (player.getHours() < 10 && player.getMinutes() <= 5)
             {
                 System.out.println("The time is 0" + player.getHours() + " : 0" + player.getMinutes());
+                System.out.println();
             }
             else if (player.getHours() < 10 && player.getMinutes() > 5)
             {
                 System.out.println("The time is 0" + player.getHours() + " : " + player.getMinutes());
+                System.out.println();
             }
             else if (player.getHours() >= 10 && player.getMinutes() <=5)
             {
                 System.out.println("The time is " + player.getHours() + " : 0" + player.getMinutes());
+                System.out.println();
             }
             else
             {
                 System.out.println("The time is " + player.getHours() + " : " + player.getMinutes());
+                System.out.println();
             }
             player.printStirTime();
+            System.out.println();
         }
         else
         {
             System.out.println("You cannot see " + item);
+            System.out.println();
             player.decreasePotionTurns();
         }
     }
@@ -197,16 +216,19 @@ public class LookCommand extends ZuulCommand
         if(player.inventory.contains(object))
         {
             object.getDescription();
+            System.out.println();
         }
         else
         {
             if(currentLocation.getName() == location)
             {
                 System.out.println("You can see " + item);
+                System.out.println();
             }
             else
             {
                 System.out.println("You cannot see " + item);
+                System.out.println();
             }
         }
     }

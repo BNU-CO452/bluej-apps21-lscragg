@@ -48,23 +48,28 @@ public class Game
             if (PLAYER.getPotionstatus() == 1)
             {
                 System.out.println("You have currently added " + PLAYER.getPotionstatus() + " item to your potion");
+                System.out.println();
             }
             else
             {
                 System.out.println("You have currently added " + PLAYER.getPotionstatus() + " items to your potion");
+                System.out.println();
             }
             if (PLAYER.getPotionTurns() == 0)
             {
                 System.out.println("You forgot to stir your cauldron and your cave caught fire.");
                 System.out.println("You cast a spell that saves your cave and its content but it takes half an hour.");
+                System.out.println();
                 PLAYER.wrongMoveTime();
                 if (PLAYER.getPotionstatus() == 1)
                 {
                   System.out.println("You have currently added " + PLAYER.getPotionstatus() + " item to your potion");
+                  System.out.println();
                 }
                 else
                 {
                   System.out.println("You have currently added " + PLAYER.getPotionstatus() + " items to your potion");
+                  System.out.println();
                 }
             }
             gameOver = reader.getCommand();
@@ -76,23 +81,28 @@ public class Game
             if (PLAYER.getHours() < 10 && PLAYER.getMinutes() <= 5)
             {
                 System.out.println("You finished your potion at 0" + PLAYER.getHours() + " : 0" + PLAYER.getMinutes());
+                System.out.println();
             }
             else if (PLAYER.getHours() < 10 && PLAYER.getMinutes() > 5)
             {
                 System.out.println("You finished your potion at 0" + PLAYER.getHours() + " : " + PLAYER.getMinutes());
+                System.out.println();
             }
             else if (PLAYER.getHours() >= 10 && PLAYER.getMinutes() <=5)
             {
                 System.out.println("You finished your potion at " + PLAYER.getHours() + " : 0" + PLAYER.getMinutes());
+                System.out.println();
             }
             else
             {
                 System.out.println("You finished your potion at " + PLAYER.getHours() + " : " + PLAYER.getMinutes());
+                System.out.println();
             }
         }
         else
         {
             System.out.println("You were unable to complete the potion in time");
+            System.out.println();
         }
         System.out.println("Thank you for playing.  Good bye.");
     }
@@ -117,10 +127,11 @@ public class Game
                                "\t  : " + command.description);                        
         }   
         System.out.println();
-        System.out.println(" e.g. go west, read recipe ");
+        System.out.println(" e.g. go west, look recipe ");
         System.out.println();
         
         System.out.println(MAP.getCurrentLocation().getLongDescription());
         MAP.getCurrentLocation().printItems();
+        System.out.println();
     }
 }

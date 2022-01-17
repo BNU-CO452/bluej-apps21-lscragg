@@ -27,6 +27,7 @@ public class TakeCommand extends ZuulCommand
         {
             // if there is no second word, we don't know what to take...
             System.out.println("Take what?");
+            System.out.println();
             return;
         }
         Map map = zuul.MAP;
@@ -40,11 +41,13 @@ public class TakeCommand extends ZuulCommand
             if(currentLocation.getName().equals("cave"))            
             {
                 System.out.println("Cauldron cannot be picked up");
+                System.out.println();
             }
             
             else
             {
                 System.out.println(item + " does not exist either in this location or anywhere");
+                System.out.println();
             }
         }  
         
@@ -111,6 +114,7 @@ public class TakeCommand extends ZuulCommand
         else
         {
             System.out.println(item + " does not exist either in this location or anywhere");
+            System.out.println();
         }
     }
     
@@ -128,18 +132,21 @@ public class TakeCommand extends ZuulCommand
                 if (player.inventory.contains(checkItem))
                 {
                   System.out.println(item + " is already in your inventory. Type look inventory to check");  
+                  System.out.println();
                 }
                 else
                 {
                   currentLocation.removeItem(checkItem);
                   player.addInventory(checkItem);
                   System.out.println(item + " has been added to inventory");
+                  System.out.println();
                   player.decreasePotionTurns();  
                 }
             }
          else
             {
                 System.out.println(item + " does not exist either in this location or anywhere");
+                System.out.println();
             }
         
     }

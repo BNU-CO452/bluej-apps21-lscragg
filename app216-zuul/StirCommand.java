@@ -25,6 +25,7 @@ public class StirCommand extends ZuulCommand
         {
             // if there is no second word, we don't know what to stir...
             System.out.println("Stir what?");
+            System.out.println();
             return;
         }
         Map map = zuul.MAP;
@@ -37,6 +38,7 @@ public class StirCommand extends ZuulCommand
             if (item.equals("cauldron"))
             {
                 System.out.println("Cauldron has been stirred");
+                System.out.println();
                 player.resetPotionTurns();
                 player.addTime();
             }
@@ -81,10 +83,12 @@ public class StirCommand extends ZuulCommand
                 if (player.inventory.contains(map.recipe))
                 {
                     System.out.println("You cannot stir " + item);
+                    System.out.println();
                 }
                 else
                 {
                     System.out.println(item + " is not in your inventory");
+                    System.out.println();
                 }
             }
             else if (item.equals("codebook"))
@@ -92,10 +96,12 @@ public class StirCommand extends ZuulCommand
                 if (player.inventory.contains(map.codebook))
                 {
                     System.out.println("You cannot stir " + item);
+                    System.out.println();
                 }
                 else
                 {
                     System.out.println(item + " is not in your inventory");
+                    System.out.println();
                 }
             }
             else if (item.equals("watch"))
@@ -103,20 +109,24 @@ public class StirCommand extends ZuulCommand
                 if (player.inventory.contains(map.watch))
                 {
                     System.out.println("You cannot stir " + item);
+                    System.out.println();
                 }
                 else
                 {
                     System.out.println(item + " is not in your inventory");
+                    System.out.println();
                 }
             }
             else
             {
                 System.out.println(item + " is not in your inventory");
+                System.out.println();
             }
         } 
         else
         {
             System.out.println("You can only stir when you are in the cave");
+            System.out.println();
         }
     }
     
@@ -130,12 +140,14 @@ public class StirCommand extends ZuulCommand
         if (player.inventory.contains(checkitem))
         {
            System.out.println(item + " has been added to the cauldron");
+           System.out.println();
            player.removeInventory(checkitem);
            player.increasePotionstatus();
         }
         else
         {
             System.out.println(item + " is not in your inventory");
+            System.out.println();
         }
     }
     
@@ -150,12 +162,14 @@ public class StirCommand extends ZuulCommand
         {
             System.out.println("You added the wrong item to your potion and it exploded.");
             System.out.println("You cast a spell to save your potion but it takes half an hour.");
+            System.out.println();
             player.wrongMoveTime();
         }
             
         else
         {
             System.out.println(item + " is not in your inventory");
+            System.out.println();
         } 
     }
     

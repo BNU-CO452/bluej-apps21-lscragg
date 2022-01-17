@@ -33,5 +33,6 @@ public class HelpCommand extends ZuulCommand
         System.out.println(" e.g. go west, read recipe ");
         System.out.println();
         System.out.println(zuul.MAP.getCurrentLocation().getLongDescription());
+        System.out.println();
     }
 }
