@@ -39,12 +39,12 @@ public class Player
      */
     public void wrongMoveTime()
     {
+        resetPotionTurns();
         while (repeat <6)
         {
             addTime();
             repeat = repeat + 1;
         }
-        resetPotionTurns();
         repeat = 0;
     }
     
