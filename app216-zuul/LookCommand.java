@@ -217,7 +217,7 @@ public class LookCommand extends ZuulCommand
         player.decreasePotionTurns();
         if(player.inventory.contains(object))
         {
-            System.out.println(object.getDescription());
+            object.getDescription();
             System.out.println();
         }
         else
