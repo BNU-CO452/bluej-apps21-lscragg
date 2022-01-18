@@ -75,35 +75,39 @@ public class Game
             gameOver = reader.getCommand();
         }
         
-        if (PLAYER.getPotionstatus() == 6)
+        if (PLAYER.getHours() == 16)
         {
-            System.out.println("You have finished your potion");
-            if (PLAYER.getHours() < 10 && PLAYER.getMinutes() <= 5)
-            {
+            if (PLAYER.getPotionstatus() == 6)
+           {
+              System.out.println("You have finished your potion");
+              if (PLAYER.getHours() < 10 && PLAYER.getMinutes() <= 5)
+              {
                 System.out.println("You finished your potion at 0" + PLAYER.getHours() + " : 0" + PLAYER.getMinutes());
                 System.out.println();
-            }
-            else if (PLAYER.getHours() < 10 && PLAYER.getMinutes() > 5)
-            {
+              }
+              else if (PLAYER.getHours() < 10 && PLAYER.getMinutes() > 5)
+              {
                 System.out.println("You finished your potion at 0" + PLAYER.getHours() + " : " + PLAYER.getMinutes());
                 System.out.println();
-            }
-            else if (PLAYER.getHours() >= 10 && PLAYER.getMinutes() <=5)
-            {
+              }
+              else if (PLAYER.getHours() >= 10 && PLAYER.getMinutes() <=5)
+              {
                 System.out.println("You finished your potion at " + PLAYER.getHours() + " : 0" + PLAYER.getMinutes());
                 System.out.println();
-            }
-            else
-            {
+              }
+              else
+              {
                 System.out.println("You finished your potion at " + PLAYER.getHours() + " : " + PLAYER.getMinutes());
                 System.out.println();
-            }
-        }
-        else
-        {
+              }
+           }
+           else
+           {
             System.out.println("You were unable to complete the potion in time");
             System.out.println();
+           }
         }
+        
         System.out.println("Thank you for playing.  Good bye.");
     }
 
