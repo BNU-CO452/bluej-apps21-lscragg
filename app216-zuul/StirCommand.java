@@ -165,6 +165,7 @@ public class StirCommand extends ZuulCommand
            System.out.println();
            player.removeInventory(checkitem);
            player.increasePotionstatus();
+           player.addTime();
         }
         else
         {
