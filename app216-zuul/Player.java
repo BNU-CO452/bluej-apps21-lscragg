@@ -16,6 +16,9 @@ public class Player
     private int stirHours;
     private int stirMinutes;
     private int repeat;
+    private int stirByHours;
+    private int stirByMinutes;
+    private int loop;
     private int potionstatus;
     public ArrayList<Item> inventory;
     /**
@@ -30,6 +33,9 @@ public class Player
         hours = 7;
         stirHours = 7;
         stirMinutes = 0;
+        stirByHours = 7;
+        stirMinutes = 0;
+        loop = 0;
         inventory = new ArrayList<>();
     }
     
